@@ -1,0 +1,31 @@
+body { background-color: #fff;
+    font-family:Arial, Verdana, sans-serif}
+    header { background-color:#800000;  
+     color:#ffd700;
+     font-family:Georgia, "Times New Roman", serif;}
+    h1{ color: #ffd700;}
+    h2{ color: #800000;}
+     
+     nav { font-weight: bold;
+	  font-size: 1.25em;}
+      a:link {
+    color: #ffd700;
+}
+
+/* visited link */
+a:visited {color:#fff}  
+
+/* selected link */
+a:active {
+    color: goldenrod;
+}
+a:hover {color: black}
+
+
+header {
+	text-align: center;
+}
+footer 
+    {font-style: italic;
+    font-size:small;
+    text-align: left}
