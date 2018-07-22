@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Jamika Love-Logan's Pilot Project</title>
+<meta charset="utf-8">
+<style>
+body { background-color: #fff;
+    font-family:Arial, Verdana, sans-serif}
+    header { background-color:#800000;  
+     color:#ffd700;
+     font-family:Georgia, "Times New Roman", serif;}
+    h1{ color: #ffd700;}
+    h2{ color: #800000;}
+     
+     nav { font-weight: bold;
+	  font-size: 1.25em;}
+      a:link {
+    color: #ffd700;
+}
+
+/* visited link */
+a:visited {color:#fff}  
+
+/* selected link */
+a:active {
+    color: goldenrod;
+}
+a:hover {color: black}
+
+
+header {
+	text-align: center;
+}
+
+#calendar {
+	width: 100%;	
+}
+
+#calendar a {
+	color: #800000;
+	text-decoration: none;
+}
+
+#calendar ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	width: 100%;
+}
+
+#calendar li {
+	display: block;
+	float: left;
+	width:14.342%;
+	padding: 5px;
+	box-sizing:border-box;
+	border: 1px solid #ccc;
+	margin-right: -1px;
+	margin-bottom: -1px;
+}
+
+#calendar ul.weekdays {
+	height: 40px;
+	background: #800000;
+}
+
+#calendar ul.weekdays li {
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 20px;
+	border: none !important;
+	padding: 10px 6px;
+	color: #fff;
+	font-size: 13px;
+}
+
+#calendar .days li {
+	height: 180px;
+}
+
+#calendar .days li:hover {
+	background: #d3d3d3;
+}
+
+#calendar .date {
+	text-align: center;
+	margin-bottom: 5px;
+	padding: 4px;
+	background: #800000;
+	color: #fff;
+	width: 20px;
+	border-radius: 50%;
+	float: right;
+}
+
+#calendar .event {
+	clear: both;
+	display: block;
+	font-size: 13px;
+	border-radius: 4px;
+	padding: 5px;
+	margin-top: 40px;
+	margin-bottom: 5px;
+	line-height: 14px;
+	background: #e4f2f2;
+	border: 1px solid #b5dbdc;
+	color: #009aaf;
+	text-decoration: none;
+}
+
+#calendar .event-desc {
+	color: #666;
+	margin: 3px 0 7px 0;
+	text-decoration: none;	
+}
+
+#calendar .other-month {
+	background: #f5f5f5;
+	color: #666;
+}
+
+/* ============================
+				Mobile Responsiveness
+   ============================*/
+
+
+@media(max-width: 768px) {
+
+	#calendar .weekdays, #calendar .other-month {
+		display: none;
+	}
+
+	#calendar li {
+		height: auto !important;
+		border: 1px solid #ededed;
+		width: 100%;
+		padding: 10px;
+		margin-bottom: -1px;
+	}
+
+	#calendar .date {
+		float: none;
+	}
+}
+footer 
+    {font-style: italic;
+    font-size:small;
+    text-align: left}
+
+
+    </style>
+    </head>
+    
+    
+    
+    <body>
+            <header><h1>Jamika Love-Logan's Pilot Project</h1>
+            <nav><a href="http://JamikaLove.github.io/ISLT_7360/finalproject/love_project.html">Home</a> <a href="http://JamikaLove.github.io/ISLT_7360/finalproject/financialaid.html">Financial Aid</a> <a href="http://JamikaLove.github.io/ISLT_7360/finalproject/scholarships.html">Scholarships</a> <a href="http://JamikaLove.github.io/ISLT_7360/finalproject/checklist.html">Checklist</a> <a href="http://JamikaLove.github.io/ISLT_7360/finalproject/resources.html">Resources</a></nav>
+            </header>
+            <h2>Mrs. Love-Logan's Counseling Page</h2>
+             <img src="http://JamikaLove.github.io/ISLT_7360/PilotSite/pilotsiteimages/tiger.png" alt="tiger" height="60" width="60" style="float:left"> 
+             <p>Welcome to the Senior Counseling Page! My name is Jamika Love-Logan and I am one of the school counselors at Soldan High School! The purpose of this page is to provide you with information to assist you with your post-secondary plans.Here your will find
+                 scholarship information,FAFSA instructions, dates and deadlines for testing and other events, student/parent checklist and many other resources!</p>
+                 <h2>Upcoming Events</h2>
+                 <div id="calendar-wrap">
+                                <header>
+                                        <h1>August 2018</h1>
+                                </header>
+                                <div id="calendar">
+                                        <ul class="weekdays">
+                                                <li>Sunday</li>
+                                                <li>Monday</li>
+                                                <li>Tuesday</li>
+                                                <li>Wednesday</li>
+                                                <li>Thursday</li>
+                                                <li>Friday</li>
+                                                <li>Saturday</li>
+                                        </ul>
+            
+                                        <!-- Days from previous month -->
+            
+                                        <ul class="days">
+                                                <li class="day other-month">
+                                                        <div class="date">29</div>    					
+                                                </li>
+                                                <li class="day other-month">
+                                                        <div class="date">30</div>
+                                                                                                 
+                                                </li>
+                                                <li class="day other-month">
+                                                        <div class="date">31</div>    					
+                                                </li>
+                                                
+                                                
+            
+                                                <!-- Days in current month -->
+            
+                                                <li class="day">
+                                                        <div class="date">1</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">2</div>
+                                                                                                 
+                                                </li>
+                                        </ul>
+            
+                                                <!-- Row #2 -->
+            
+                                        <ul class="days">
+                                                <li class="day">
+                                                        <div class="date">3</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">4</div> 
+                          <div class="event">
+                                                                <div class="event-desc">
+                                                                        Last Day to Register for September 4th ACT!
+                                                                </div>
+                                                                
+                                                        </div>     			    			
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">5</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">6</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">7</div>
+                                                                                                   
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">8</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">9</div>    					
+                                                </li>
+                                        </ul>
+            
+                                                <!-- Row #3 -->
+            
+                                        <ul class="days">
+                                                <li class="day">
+                                                        <div class="date">10</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">11</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">12</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">13</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">14</div>
+                          <div class="event">
+                                                                <div class="event-desc">
+                                                                        First Day of School!
+                                                                </div>
+                                                                
+                                                        </div>     					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">15</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">16</div>    					
+                                                </li>
+                                        </ul>
+            
+                                                <!-- Row #4 -->
+            
+                                        <ul class="days">
+                                                <li class="day">
+                                                        <div class="date">17</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">18</div>
+                                                        <div class="event">
+                                                         <div class="event-desc">
+                                                                 Last Day to Register Late for the ACT. Fee Required
+                                                         </div>       
+                                                        </div>   					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">19</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">20</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">21</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">22</div>
+                                                                                                   
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">23</div>    					
+                                                </li>
+                                        </ul>
+            
+                                                        <!-- Row #5 -->
+            
+                                        <ul class="days">
+                                                <li class="day">
+                                                        <div class="date">24</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">25</div>
+                                                        <div class="event">
+                                                                <div class="event-desc">
+                                                                        SAT Testing Date!
+                                                                </div>
+                                                        </div>
+                                                                                                    
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">26</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">27</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">28</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">29</div>    					
+                                                </li>
+                                                <li class="day">
+                                                        <div class="date">30</div>    					
+                                                </li>
+                                        </ul>
+            
+                                        <!-- Row #6 -->
+            
+                                        <ul class="days">
+                                                <li class="day">
+                                                        <div class="date">31</div>    					
+                                                </li>
+                                                
+                                        </ul>
+            
+                                </div><!-- /. calendar -->
+                        </div><!-- /. wrap --> 
+                 
+             
+              
+            <footer>
+ <p>Page created by <a href= "mailto:JamikaLove@hotmail.com">Jamika Love-Logan</a></p>
+<p>Last updated on July 6 2018.</p>
+<p>
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px"
+                        src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="Valid CSS!" />
+                </a>
+            </p>
+           <p> Image reproduced from the Creative Commons website.</p>
+</footer>
+            </body>
+            </html> 
